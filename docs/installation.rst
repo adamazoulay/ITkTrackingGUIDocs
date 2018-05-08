@@ -2,6 +2,4 @@
 Installation
 ============
 
-Install the package with pip::
-
-    $ pip install read-the-docs-template
+Clone the repo or download directly::

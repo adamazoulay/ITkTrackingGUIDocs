@@ -2,6 +2,6 @@
 Usage
 ========
 
-To use this template, simply update it::
+To run, inside root use::
 
-	import read-the-docs-template
+	python3 main.py

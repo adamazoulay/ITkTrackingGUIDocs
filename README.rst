@@ -1,41 +1,31 @@
-Template
+ITk Tracking GUI
 ========
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
-
-Look how easy it is to use:
-
-    import project
-    # Get your stuff done
-    project.do_stuff()
+This is $project.
 
 Features
 --------
 
-- Be awesome
-- Make things faster
+- Track issues
+- Easy selection
 
 Installation
 ------------
 
-Install $project by running:
-
-    install project
+Download by cloning the repo or downloading directly from gitlab (picture here).
 
 Contribute
 ----------
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
+- Source Code: gitlab.cern.ch/aazoulay/ITkTrackingGUI
 
 Support
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
+If you are having issues, please let me know.
+I can be reached at: aazoulay@yorku.ca
 
 License
 -------
 
-The project is licensed under the BSD license.
+The project is licensed under the MIT license.
