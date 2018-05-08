@@ -9,7 +9,7 @@ Downloading and Extracting
 To download an archive of the latest stable version, navigate to the GitLab page for the `ITk Tracking GUI`__
 
 
-.. _ITkTrackingGUI: http://docutils.sf.net/rst.html
+.. _ITkTrackingGUI: https://gitlab.cern.ch/aazoulay/ITkTrackingGUI
 __ ITkTrackingGUI_
 
 
