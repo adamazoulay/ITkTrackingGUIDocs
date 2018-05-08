@@ -1,9 +1,6 @@
-.. Read the Docs Template documentation master file, created by
-   sphinx-quickstart on Tue Aug 26 14:19:49 2014.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Edited template master file
 
-Welcome to Read the Docs Template's documentation!
+Welcome to the ITK Tracking GUI's documentation!
 ==================================================
 
 Contents:
@@ -12,6 +9,11 @@ Contents:
    :maxdepth: 2
    :glob:
 
+   readme
+   installation
+   usage
+   modules
+   authors
    *
 
 
@@ -19,7 +21,5 @@ Contents:
 Indices and tables
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 

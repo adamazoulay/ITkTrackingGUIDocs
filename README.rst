@@ -1,7 +1,7 @@
 ITk Tracking GUI
 ========
 
-This is $project.
+This is the ITk Tracking GUI.
 
 Features
 --------
