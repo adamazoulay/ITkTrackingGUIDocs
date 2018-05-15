@@ -19,29 +19,40 @@ Download and extract
 ~~~~~~~~~~~~~~~~~~~~
 To download an archive of the latest stable version, navigate to the GitLab page for the `ITk Tracking GUI`__
 and click on the |download| button, and select the archive type you wish to download (.zip is usually fine for
-most purposes).
+most systems).
 
 Once you have the archive downloaded to your computer, extract it to the location you would like to store the program.
 
 
 Clone the repo
 ~~~~~~~~~~~~~~
-To clone the repo from gitlab, you must have git installed on your computer
+To clone the repo from gitlab, you must have git installed on your computer. You can clone the repo using the URL of the
+project which is located on the readme page.
 
 
 2. Install Python 3.6 and pip
 -----------------------------
-Download and install these guys.
+**For windows and MacOS**, navigate to the `Python 3.6 download page`_ and scroll to the bottom. There will be a list of installers. Click
+the one for your operating system, and install it once the download is complete.
+
+*During installation, make sure the* ``Add Python 3.6 to PATH`` *option is selected.*
+
+**For linux**, Python 3 should already be installed on your system. If it is not, you can install it by running the
+package installer with the option ``python3``. For example, ``sudo apt-get install python3``.
 
 3. Install the dependencies
 ---------------------------
-Run
+Once the Python installation is finished, we need to install the dependencies required for the program to run.
+Open up a command window in the root directory where you extracted the code (there should be a file called
+``requirements.txt`` located there).
+
+Once the window is open, run the following command:
 
 .. code-block:: python
 
-    pip3 requirements.txt
+    pip3 install -r requirements.txt
 
-Done
+The updates should download without error. Once this is complete the setup is finished.
 
 
 
@@ -53,5 +64,7 @@ Done
     :align: middle
 
 __ ITkTrackingGUI_
+
+.. _`Python 3.6 download page`: https://www.python.org/downloads/release/python-365/
 
 

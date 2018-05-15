@@ -2,29 +2,46 @@
 Usage
 ========
 
-To run, inside root use
+To run the program, open a command window inside of the ``bin`` folder.
+
+Make sure you are running Python 3 (by ``running python --version`` on windows or ``python3 --version`` on MacOS/linux).
+
+Finally, run the code:
+
+.. code-block:: python
+
+	python main.py
+
+or
 
 .. code-block:: python
 
 	python3 main.py
 
-and then the main window and edit window will open up.
+depending on which command is used for Python 3.
+
+You should see the main window and edit window for the program open up.
+
 
 Configuration
 -------------
-Open config in menu and fill in all the values, and click save. This will be stored inside the save file.
+To input configuration (such as username and institute), go to the File menu and click Configuration. Fill in all
+relevant information  and click Apply, then close the window. This information will be saved in the save file.
+
+.. image:: img/config.png
 
 Navigation
 ----------
-Use tree to navigate to desired component.
+Use the tree on the left side of the program to navigate to the component you wish to mark. (Ex: R0->H1->HCC)
 
 Selection
 ---------
-Use selection window (image) or the image itself to select areas that have been identified.
+Use selection window or the image itself to select areas that have been identified. Selectable areas are shown on the
+image with a red box. Once clicked, they will turn blue and be added to the selected list.
 
 To select with the edit window, select an entry (or multiple entries while holding Shift) and click the add button.
 
-To select with the image, click inside the box corresponding to the location that was identified.
+The comments for selected items can be edited by double clicking the comment space in the selected list.
 
 Saving
 ------
