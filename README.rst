@@ -15,7 +15,7 @@ Features
 Installation
 ------------
 
-See `Installation`__
+See `Installation`_
 
 Contribute
 ----------
