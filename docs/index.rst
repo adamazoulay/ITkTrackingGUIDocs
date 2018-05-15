@@ -12,6 +12,7 @@ Contents:
    readme
    installation
    usage
+   flow
    modules
    authors
    *

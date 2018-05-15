@@ -7,8 +7,8 @@ This is the main python file, it initiates the PyQt application, builds the main
 correct coordinates, and then executes the app. Most of the meat of the code is stored in the other files, this one is
 mostly for organization.
 
-issue_tracking_gui.py
----------------------
+lib\\issue_tracking_gui.py
+--------------------------
 All the code for the GUI is contained within the IssueTrackingGUI class. The class inherits from the PyQt class
 ``QMainWindow`` which is the central widget for our program.
 
@@ -124,4 +124,13 @@ Build and display the About window. Takes a message and image to disply, and the
 to display the result.
 
 
+
+lib\\config_edit_widget
+-----------------------
+
+lib\\selection_edit_widget
+--------------------------
+
+lib\\selection_areas
+--------------------
 
