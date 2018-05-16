@@ -11,13 +11,15 @@ This is the main python file, it initiates the PyQt application, builds the main
 correct coordinates, and then executes the app. Most of the meat of the code is stored in the other files, this one is
 mostly for organization.
 
+|br|
+
 lib\\issue_tracking_gui.py
 --------------------------
 All the code for the GUI is contained within the IssueTrackingGUI class. The class inherits from the PyQt class
 ``QMainWindow`` which is the central widget for our program.
 
 \__init__
-``````````
+`````````
 First the .ui file for the GUI is loaded, and then we initialize all global variables to fill in later as needed. This
 prevents errors for undefined variables.
 
@@ -127,6 +129,8 @@ about
 Build and display the About window. Takes a message and image to disply, and then ususes the PyQt function QMessageBox
 to display the result.
 
+|br|
+
 
 
 lib\\config_edit_widget
@@ -198,6 +202,8 @@ all the components available.
 
 Finally we reset the selected items dictionary (for the next loading in case of the dictionary not existing).
 
+|br|
+
 
 lib\\selection_areas
 --------------------
@@ -217,3 +223,7 @@ After the class definition comes all the components stored inside of dictionarie
 corresponds to one location on the component it is named after. See `Structures and Flow`_ for more details.
 
 .. _`Structures and Flow`: flow.html
+
+.. |br| raw:: html
+
+    <br>
