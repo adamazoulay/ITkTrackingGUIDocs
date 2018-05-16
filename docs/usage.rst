@@ -34,6 +34,12 @@ Navigation
 ----------
 Use the tree on the left side of the program to navigate to the component you wish to mark. (Ex: R0->H1->HCC)
 
+To zoom in and out on an image, use the scroll wheel on your mouse.
+
+To move the image, hold the ``Ctrl`` key to click and drag the image.
+
+To reset the image to fit the window, press the `R` key.
+
 Selection
 ---------
 Use selection window or the image itself to select areas that have been identified. Selectable areas are shown on the
