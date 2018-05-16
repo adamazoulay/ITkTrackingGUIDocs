@@ -5,6 +5,8 @@ This sections gives a rundown of the basic functionality of all modules in the s
 in the comments of the code. An explanation of the algorithmic flow and the data structures can be found in the
 `Structures and Flow`_ section of the documentation.
 
+|br|
+
 main.py
 -------
 This is the main python file, it initiates the PyQt application, builds the main window and edit window forms, sets the
@@ -142,6 +144,7 @@ save_config
 ```````````
 Set each of the config values and close the window once save is clicked.
 
+|br|
 
 lib\\selection_edit_widget
 --------------------------
@@ -211,13 +214,13 @@ lib\\selection_areas
 This module stores the class BoardItem which is used to store the information about each predefined area on the components.
 A BoardItem contains:
 
-- name (str)
-- description (str)
-- signal (str)
-- direction (str)
-- pad_type (str)
-- coords [on the template image] (list)
-- comments (str)
+- ``name (str)``
+- ``description (str)``
+- ``signal (str)``
+- ``direction (str)``
+- ``pad_type (str)``
+- ``coords (list)`` (on the template image)
+- ``comments (str)``
 
 After the class definition comes all the components stored inside of dictionaries. Each item in the dictionary
 corresponds to one location on the component it is named after. See `Structures and Flow`_ for more details.
@@ -226,4 +229,4 @@ corresponds to one location on the component it is named after. See `Structures 
 
 .. |br| raw:: html
 
-    <br>
+    <hr>
