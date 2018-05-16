@@ -1,3 +1,5 @@
+.. highlight:: python3
+
 Structures and Flow
 ===================
 
