@@ -28,9 +28,9 @@ any component.
         self.comments = comments
 
 We store all information about each of the components and generate the item. These BoardItems are then stored in component
-dictionaries:
+dictionaries::
 
-.. code:: python
+
 
     ASIC = {
     'BP1': BoardItem('XOFFRB', 'Data signal (bidirectional)', '160', 'I/O', 'SLVS',
