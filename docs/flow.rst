@@ -15,7 +15,7 @@ BoardItem
 Defined in `lib\\selection_areas`_, this is a class containing all the fields we need to define a selectable item on
 any component.
 
-.. code:: python
+.. code-block:: python
 
     class BoardItem:
     def __init__(self, name, description, signal, direction, pad_type, coords, comments):
@@ -28,9 +28,9 @@ any component.
         self.comments = comments
 
 We store all information about each of the components and generate the item. These BoardItems are then stored in component
-dictionaries::
+dictionaries:
 
-
+.. code-block:: python
 
     ASIC = {
     'BP1': BoardItem('XOFFRB', 'Data signal (bidirectional)', '160', 'I/O', 'SLVS',
@@ -49,7 +49,7 @@ Defined in `lib\\issue_tracking_gui`_, this is a ``str`` which gives us the curr
 tree. It is built by appending all levels of the tree which lead to the current selected entry. For example, if the
 user is currently at the HCC on the RH hybrid of a barrel module:
 
-.. code:: python
+.. code-block:: python
 
     self.cur_location = 'BarrelRHHCC'
 
