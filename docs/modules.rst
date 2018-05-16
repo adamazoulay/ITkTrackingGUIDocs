@@ -1,6 +1,10 @@
 Modules and Code
 ================
 
+This sections gives a rundown of the basic functionality of all modules in the source code. More details can be found
+in the comments of the code. An explanation of the algorithmic flow and the data structures can be found in the
+`Structures and Flow`_ section of the documentation.
+
 main.py
 -------
 This is the main python file, it initiates the PyQt application, builds the main window and edit window forms, sets the
@@ -45,7 +49,7 @@ it will colour the item red so the user can easily identify which components are
 
 flatten_tree
 ````````````
-A recursive helper fuction for colour_selection_tree_. Takes all elements of the tree view and puts them into one array.
+A recursive helper function for colour_selection_tree_. Takes all elements of the tree view and puts them into one array.
 
 save
 ````
@@ -127,10 +131,89 @@ to display the result.
 
 lib\\config_edit_widget
 -----------------------
+This is the widget for accepting the configuration information and saving it to the parent dictionary. All we do at the
+start is connect the save and close buttons to save the data or close the window respectively.
+
+save_config
+```````````
+Set each of the config values and close the window once save is clicked.
+
 
 lib\\selection_edit_widget
 --------------------------
+This module contains the code for the selection of components with the edit widget. We initialize it the same way we
+initialize the main GUI window, but setting the global variables and connecting the buttons on the GUI to functions
+within the class.
+
+comment_double_click
+````````````````````
+This function checks if the user has double clicked the comments column (column 2). If they have, it sets the column
+as editable and allows the user to input a comment which is then saved in the main window cur_selected array.
+
+save_comments
+`````````````
+This is a convenience function (maybe redundant, needs to be checked). It loops through all the items in the cur_selected
+list and saves all the comments to the parent dictionary.
+
+eventFilter
+```````````
+This event filter allows us to trigger when focus is lost from the edit window. For example, when the user fills in a
+comment and then clicks the main window, we want the edit window to save all the comments so they are not lost. More
+features can be added here in the future if needed.
+
+add_custom_component
+````````````````````
+The user can trigger this by clicking the 'Add custom' button. It sets the name for the custom component and creates
+a blank board item, adding it to the parent dictionary and setting custom mode to true.
+
+The rest of the functionality comes from the eventFilter in `lib\\issue_tracking_gui.py`_.
+
+add_selected_components
+```````````````````````
+Here we loop through all the components that are currently highlighted on the list, and add them to the selected list.
+We then place the board item for all selected components into the cur_selected dictionary in the main window.
+
+We then reload the list and the image (to have correct box colours and selection tree colours).
+
+remove_selected_components
+``````````````````````````
+We loop through all the selected items and remove them from the parent cur_selected dictionary if they are already in it.
+If they are not, we do nothing. We also make sure to wipe the comment field (strange behaviour if we do not do this).
+
+We then reload the list and the image (to have correct box colours and selection tree colours).
+
+build_edit_coords
+`````````````````
+Checks the coordinates of the main window and then positions itself on the right side of the window, scaled to its width
+and with the same height.
+
+load_list
+`````````
+This function refreshes the elementTree and the selectedTree which list the components available for selection and the
+currently selected components. First we check some load cases for repeated lists (like the ASICs) and then we check to
+see if there already exists a selection on this component.
+
+We then grab the dictionary for the selected component and populate the elementTree and the selectedTree rows with
+all the components available.
+
+Finally we reset the selected items dictionary (for the next loading in case of the dictionary not existing).
+
 
 lib\\selection_areas
 --------------------
 
+This module stores the class BoardItem which is used to store the information about each predefined area on the components.
+A BoardItem contains:
+
+- name (str)
+- description (str)
+- signal (str)
+- direction (str)
+- pad_type (str)
+- coords [on the template image] (list)
+- comments (str)
+
+After the class definition comes all the components stored inside of dictionaries. Each item in the dictionary
+corresponds to one location on the component it is named after. See `Structures and Flow`_ for more details.
+
+.. _`Structures and Flow`: flow.html
