@@ -227,6 +227,8 @@ corresponds to one location on the component it is named after. See `Structures 
 
 .. _`Structures and Flow`: flow.html
 
+.. _`lib\\issue_tracking_gui.py`: modules.html#lib-issue-tracking-gui
+
 .. |br| raw:: html
 
     <hr>

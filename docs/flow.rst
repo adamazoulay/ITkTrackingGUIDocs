@@ -1,6 +1,3 @@
-.. highlight:: python
-
-
 Structures and Flow
 ===================
 
