@@ -10,13 +10,13 @@ in the comments of the code. An explanation of the algorithmic flow and the data
 main.py
 -------
 This is the main python file, it initiates the PyQt application, builds the main window and edit window forms, sets the
-correct coordinates, and then executes the app. Most of the meat of the code is stored in the other files, this one is
+correct coordinates, and then executes the app. Most of the meat of the code is stored in the other files; this one is
 mostly for organization.
 
 |br|
 
-lib\\issue_tracking_gui.py
---------------------------
+lib\\issue_tracking_gui
+-----------------------
 All the code for the GUI is contained within the IssueTrackingGUI class. The class inherits from the PyQt class
 ``QMainWindow`` which is the central widget for our program.
 
