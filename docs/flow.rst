@@ -63,6 +63,11 @@ Defined in `lib\\issue_tracking_gui`_, this stores all the currently selected ar
                      [(1689.1, 1363.9), (1703.9, 1363.9), (1703.9, 1397.5), (1689.1, 1397.5)], '')}}
 
 
+Flow
+----
+This shows an example of the basic data flow of the program.
+
+.. image:: img/flow.png
 
 
 
