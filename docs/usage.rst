@@ -20,7 +20,7 @@ or
 
 depending on which command is used for Python 3.
 
-You should see the main window and edit window for the program open up.
+You should see the program open up. You will find options for a new file, opening, and saving in the File menu.
 
 
 Configuration
